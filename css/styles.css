@@ -126,14 +126,26 @@ body {
   color: var(--secondary-text-color);
 }
 
-.contacts-header:hover,
-.contacts-header:focus {
+.contacts-header-item:hover,
+.contacts-header-item:focus {
   color: var(--accent-color);
+}
+
+.contacts-header-item {
+  display: flex;
+  align-items: center;
 }
 
 .contacts-header:last-child {
   margin-left: 50px;
 }
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+
 
 /* ================HERO INDEX============== */
 
@@ -141,6 +153,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2F303A;
+  max-width: 1600px;
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero-image.jpg);
+  background-size: cover;
 }
 
 .main-title {
@@ -181,20 +197,20 @@ body {
 
 /* ===============MAIN================== */
 
-.section.principles {
+.section.advantages {
   padding-bottom: 0;
 }
 
-.principles {
+.advantages {
   display: flex;
   gap: 30px;
 }
 
-.principle-item {
+.advantages-item {
   flex-basis: calc((100% - 90px) / 4) ;
 }
 
-.principles-title {
+.advantages-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -203,12 +219,23 @@ body {
   text-transform: uppercase;
 }
 
-.principles-description {
+.advantages-description {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color)
+}
+
+.advantage-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .secondary-title {
@@ -219,10 +246,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.section.activity-section {
-  padding-top: 0;
 }
 
 .activity {
@@ -316,6 +339,12 @@ body {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-description {
