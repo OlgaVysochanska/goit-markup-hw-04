@@ -173,7 +173,6 @@ body {
   text-transform: uppercase;
 
   color: var(--primary-text-color-dark-theme);
-  background-color: #2F303A;
 }
 
 .custom-button {
@@ -193,6 +192,10 @@ body {
 
   color: var(--primary-text-color-dark-theme);
   background-color: var(--accent-color);
+}
+
+.custom-button:hover {
+  background: #188CE8;
 }
 
 /* ===============MAIN================== */
@@ -240,7 +243,6 @@ body {
 
 .secondary-title {
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -290,10 +292,73 @@ body {
 }
 
 .team-description-item {
+  margin-bottom: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-text-color-dark-theme);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: #AFB1B8;
+}
+
+.social-list-item-link:hover .social-list-icon,
+.social-list-item-link:focus .social-list-icon {
+  fill: var(--primary-text-color-dark-theme);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* ===============MAIN PORTFOLIO============== */
@@ -375,9 +440,19 @@ body {
 /* ============FOOTER============== */
 
 .footer {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 215px;
   background-color: #2F303A;
+}
+
+.container-footer {
+display: flex;
+flex-direction: column;
 }
 
 .logo-footer {
@@ -413,4 +488,27 @@ body {
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--accent-color);
+}
+
+.social-list-footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.footer .social-list-item-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-list-item-link:hover,
+.footer .social-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .social-list-icon {
+  fill: var(--primary-text-color-dark-theme);
 }
